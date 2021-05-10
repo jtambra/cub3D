@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   make_screenshot.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtambra <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jtambra <jtambra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 17:22:57 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 15:02:07 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 19:13:03 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3D.h"
+#include "../../includes/cub3D.h"
 
 static void	config_bmp(t_config *config)
 {
@@ -29,9 +29,9 @@ static void	config_bmp(t_config *config)
 
 static void	fill_bmp(t_config *config, int fd)
 {
-	int	x;
-	int	y;
-	int	color;
+	size_t	x;
+	size_t	y;
+	int		color;
 
 	y = config->parse.res[1] - 1;
 	while (y >= 0)

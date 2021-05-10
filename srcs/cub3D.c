@@ -6,11 +6,11 @@
 /*   By: jtambra <jtambra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/07 15:56:37 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 14:58:36 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/09 18:24:25 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3D.h"
+#include "../includes/cub3D.h"
 
 void	ft_exit_cub(char *str)
 {

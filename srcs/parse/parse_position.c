@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   parse_position.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtambra <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jtambra <jtambra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 20:13:58 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 15:00:28 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 19:50:03 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3D.h"
+#include "../../includes/cub3D.h"
 
 static void	count_sprites(t_parse *parse, int x, int y)
 {
@@ -69,6 +69,7 @@ void	ft_parse_position(t_parse *parse)
 
 	i = 0;
 	y = 0;
+	x = 0;
 	count_sprites(parse, x, y);
 	parse->sprite_arr = (t_position *)malloc(sizeof(t_position) * \
 			parse->sprites);

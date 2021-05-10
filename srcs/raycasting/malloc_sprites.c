@@ -6,11 +6,11 @@
 /*   By: jtambra <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 21:26:52 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 15:01:24 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/07 23:56:14 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3D.h"
+#include "../../includes/cub3D.h"
 
 t_position	*malloc_sp(t_config *config, int *order, double *dist, int amount)
 {

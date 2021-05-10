@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   drawing_sprites.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtambra <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jtambra <jtambra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 21:19:21 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 15:01:17 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 20:02:06 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3D.h"
+#include "../../includes/cub3D.h"
 
 static void	calc_key_coor(t_config *config, t_sprites *sprites)
 {
@@ -26,8 +26,10 @@ static void	calc_special_cases(t_config *config, t_sprites *sprites)
 		sprites->draw_start_x = 0;
 	if (sprites->draw_start_y < 0)
 		sprites->draw_start_y = 0;
-	if (sprites->draw_end_y >= config->raycast.h)
-		sprites->draw_end_y = config->raycast.h - 1;
+	if (sprites->draw_end_y >= (int)config->raycast.h)
+		sprites->draw_end_y = (int)(config->raycast.h - 1);
+	if (sprites->draw_end_x >= (int)config->raycast.w)
+		sprites->draw_end_x = (int)(config->raycast.w - 1);
 }
 
 void	calc_sprite_params(t_config *config, t_sprites *sprites, int i)
@@ -67,7 +69,7 @@ void	drawing(t_config *config, t_sprites *sprites, double *z_buffer)
 
 	calc_coor_x(config, sprites);
 	if (sprites->transform_y > 0 && sprites->stripe > 0
-		&& sprites->stripe < config->raycast.w && sprites->transform_y
+		&& sprites->stripe < (int)config->raycast.w && sprites->transform_y
 		< z_buffer[sprites->stripe])
 	{
 		y = sprites->draw_start_y;

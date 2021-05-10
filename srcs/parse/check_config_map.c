@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   check_config_map.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtambra <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jtambra <jtambra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 20:23:34 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 14:59:56 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 19:19:07 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3D.h"
+#include "../../includes/cub3D.h"
 
 static int	ft_check_wall(char **str, t_parse *parse, size_t y, size_t x)
 {

@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   raycasting.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtambra <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jtambra <jtambra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 23:57:02 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 15:01:31 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 19:46:06 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3D.h"
+#include "../../includes/cub3D.h"
 
 static void	draw_ceiling(t_config *config)
 {
-	int	x;
-	int	y;
-	int	color;
+	size_t	x;
+	size_t	y;
+	int		color;
 
 	y = 0;
 	color = config->parse.color_arr[1];
@@ -34,9 +34,9 @@ static void	draw_ceiling(t_config *config)
 
 static void	draw_floor(t_config *config)
 {
-	int	x;
-	int	y;
-	int	color;
+	size_t	x;
+	size_t	y;
+	int		color;
 
 	y = config->parse.res[1] / 2;
 	color = config->parse.color_arr[0];
@@ -72,7 +72,7 @@ static void	malloc_z_buffer(t_config *config, double **z_buffer)
 
 int	raycasting(t_config *config)
 {
-	int			x;
+	size_t		x;
 	double		*z_buffer;
 
 	malloc_z_buffer(config, &z_buffer);

@@ -6,11 +6,11 @@
 /*   By: jtambra <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 21:46:50 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 14:59:40 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/07 23:54:17 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3D.h"
+#include "../../includes/cub3D.h"
 
 static void	set_NS(t_config *config)
 {

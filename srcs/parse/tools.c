@@ -6,11 +6,11 @@
 /*   By: jtambra <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 19:44:17 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 15:00:48 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/09 20:40:49 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3D.h"
+#include "../../includes/cub3D.h"
 
 int	ft_arrlen(char **arr)
 {

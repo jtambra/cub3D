@@ -6,11 +6,11 @@
 /*   By: jtambra <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 19:31:32 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 15:00:41 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/09 20:48:41 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3D.h"
+#include "../../includes/cub3D.h"
 
 static size_t	ft_count_spaces(char *line)
 {

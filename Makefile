@@ -6,7 +6,7 @@
 #    By: jtambra <jtambra@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/31 18:03:37 by jtambra           #+#    #+#              #
-#    Updated: 2021/05/10 15:08:43 by jtambra          ###   ########.fr        #
+#    Updated: 2021/05/10 19:06:42 by jtambra          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,11 +21,11 @@ MLX = $(MLX_DIR)libmlx.dylib
 
 GNL_DIR = ./get_next_line/
 
-INC = -I ./includes/ -I $(LIBFT_DIR) -I $(MLX_DIR) -I $(GNL_DIR)
+INC = -I./includes/ -I$(LIBFT_DIR) -I$(MLX_DIR) -I$(GNL_DIR)
 
-LIBS = -L $(LIBFT_DIR) -L $(MLX_DIR) -lft -lmlx -framework OpenGL -framework AppKit -lm
+LIBS = -L $(LIBFT_DIR) -lft -lmlx -framework OpenGL -framework AppKit -lm
 
-FLAGS = -Wall -Wextra -Werror -O3 ${INC}
+FLAGS = -Wall -Wextra -Werror -O3 $(INC)
 
 CC = gcc
 
@@ -70,7 +70,10 @@ debug: all
 
 $(NAME): ${OBJS} ${GNL_OBJS} | tools
 		cp $(MLX) libmlx.dylib
-		${CC} ${FLAGS} -o ${NAME} ${OBJS} ${GNL_OBJS} ${LIBS}
+		${CC} ${FLAGS} -o ${NAME} ${OBJS} ${GNL_OBJS} ${LIBS} ${{MLX}
+
+.c.o:
+	${CC} ${FLAGS} -c $< -o $@
 
 tools:
 	make -C $(LIBFT_DIR)

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   wall_calculations.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtambra <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jtambra <jtambra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 20:51:54 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 15:01:42 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 19:02:36 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3D.h"
+#include "../../includes/cub3D.h"
 
 void	calc_start_draw(t_config *config)
 {
@@ -20,7 +20,7 @@ void	calc_start_draw(t_config *config)
 		config->raycast.draw_start = 0;
 	config->raycast.draw_end = config->raycast.line_height / 2
 		+ config->raycast.h / 2;
-	if (config->raycast.draw_end >= config->raycast.h)
+	if (config->raycast.draw_end >= (int)config->raycast.h)
 		config->raycast.draw_end = config->raycast.h - 1;
 }
 
@@ -44,6 +44,7 @@ void	init_images(t_config *config)
 
 void	calc_texture(t_config *config, int x)
 {
+	(void)(x);
 	if (config->raycast.side == 0)
 		config->draw.wall_coor = config->parse.player.y
 			+ config->raycast.perp_wall_dist * config->raycast.ray_dir_y;

@@ -6,11 +6,11 @@
 /*   By: jtambra <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 19:29:30 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 15:00:08 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/07 23:38:15 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3D.h"
+#include "../../includes/cub3D.h"
 
 int	ft_str_isdigit(char *str)
 {
