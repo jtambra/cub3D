@@ -6,11 +6,11 @@
 /*   By: jtambra <jtambra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 18:50:17 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 18:50:50 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 21:02:33 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/cub3D.h"
+#include "cub3D.h"
 
 int	ft_check_config(int *array_flags)
 {

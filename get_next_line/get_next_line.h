@@ -6,7 +6,7 @@
 /*   By: jtambra <talya_1998@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/07 20:02:22 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/09 16:36:23 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/23 18:33:19 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # define BUFFER_SIZE 4096
 
+void	ft_add_buf_to_line(char **line, char *buf);
 int		get_next_line(int fd, char **line);
 size_t	ft_strlen(const char *s);
 char	*ft_strjoin(char const *s1, char const *s2);

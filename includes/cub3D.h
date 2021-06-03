@@ -6,7 +6,7 @@
 /*   By: jtambra <jtambra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 21:17:50 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 19:04:46 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 21:25:02 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@
 # include <stdio.h>
 # include <fcntl.h>
 # include <stdlib.h>
-# include "../libft/libft.h"
-# include "../get_next_line/get_next_line.h"
+# include "libft.h"
+# include "get_next_line.h"
 
 # define ESC 53
 # define KEY_W 13
@@ -63,8 +63,8 @@ typedef struct s_sprites
 	int		screen_x;
 	int		sprite_h;
 	int		sprite_w;
-	int 	draw_start_x;
-	int 	draw_end_x;
+	int		draw_start_x;
+	int		draw_end_x;
 	int		draw_start_y;
 	int		draw_end_y;
 	int		stripe;

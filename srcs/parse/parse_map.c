@@ -6,11 +6,11 @@
 /*   By: jtambra <jtambra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 20:00:10 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 18:58:18 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 21:02:40 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/cub3D.h"
+#include "cub3D.h"
 
 static char	*ft_realloc(char *dst, char *str)
 {

@@ -6,11 +6,11 @@
 /*   By: jtambra <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 21:38:59 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/07 23:54:27 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 21:02:06 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/cub3D.h"
+#include "cub3D.h"
 
 static void	turn_left(t_config *config)
 {

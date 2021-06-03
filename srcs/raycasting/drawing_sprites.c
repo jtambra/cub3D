@@ -6,11 +6,11 @@
 /*   By: jtambra <jtambra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 21:19:21 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 20:02:06 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 21:03:45 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/cub3D.h"
+#include "cub3D.h"
 
 static void	calc_key_coor(t_config *config, t_sprites *sprites)
 {

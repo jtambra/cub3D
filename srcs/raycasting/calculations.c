@@ -6,11 +6,11 @@
 /*   By: jtambra <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 20:40:22 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/07 23:55:00 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 21:03:22 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/cub3D.h"
+#include "cub3D.h"
 
 static void	calc_perp_wall(t_config *config)
 {

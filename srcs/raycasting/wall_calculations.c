@@ -6,11 +6,11 @@
 /*   By: jtambra <jtambra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 20:51:54 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 19:02:36 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 21:04:09 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/cub3D.h"
+#include "cub3D.h"
 
 void	calc_start_draw(t_config *config)
 {

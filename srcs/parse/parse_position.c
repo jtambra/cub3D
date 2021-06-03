@@ -6,11 +6,11 @@
 /*   By: jtambra <jtambra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 20:13:58 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 19:50:03 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 21:02:56 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/cub3D.h"
+#include "cub3D.h"
 
 static void	count_sprites(t_parse *parse, int x, int y)
 {

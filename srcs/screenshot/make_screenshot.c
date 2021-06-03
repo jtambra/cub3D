@@ -6,11 +6,11 @@
 /*   By: jtambra <jtambra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 17:22:57 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 19:13:03 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 21:24:53 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/cub3D.h"
+#include "cub3D.h"
 
 static void	config_bmp(t_config *config)
 {
@@ -29,15 +29,15 @@ static void	config_bmp(t_config *config)
 
 static void	fill_bmp(t_config *config, int fd)
 {
-	size_t	x;
-	size_t	y;
-	int		color;
+	int	x;
+	int	y;
+	int	color;
 
 	y = config->parse.res[1] - 1;
 	while (y >= 0)
 	{
 		x = 0;
-		while (x < config->parse.res[0])
+		while (x < (int)config->parse.res[0])
 		{
 			color = *(int *)(config->data.addr + (y * config->data.line_length
 						+ x * (config->data.bits_per_pixel / 8)));

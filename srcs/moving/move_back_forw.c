@@ -6,11 +6,11 @@
 /*   By: jtambra <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 21:30:48 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/07 23:53:47 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 21:01:33 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/cub3D.h"
+#include "cub3D.h"
 
 static int	next_y_is_not_wall(t_config *config)
 {

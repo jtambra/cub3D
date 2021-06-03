@@ -6,11 +6,11 @@
 /*   By: jtambra <jtambra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 21:07:10 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 19:56:57 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 21:03:30 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/cub3D.h"
+#include "cub3D.h"
 
 static void	change_sort(t_position *sprites, int amount)
 {

@@ -6,7 +6,7 @@
 #    By: jtambra <jtambra@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/31 18:03:37 by jtambra           #+#    #+#              #
-#    Updated: 2021/05/10 19:06:42 by jtambra          ###   ########.fr        #
+#    Updated: 2021/05/23 18:37:41 by jtambra          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,12 +25,13 @@ INC = -I./includes/ -I$(LIBFT_DIR) -I$(MLX_DIR) -I$(GNL_DIR)
 
 LIBS = -L $(LIBFT_DIR) -lft -lmlx -framework OpenGL -framework AppKit -lm
 
-FLAGS = -Wall -Wextra -Werror -O3 $(INC)
+FLAGS = -Wall -Wextra -Werror -O3 $(INC) -MD
 
 CC = gcc
 
 GNL = $(GNL_DIR)get_next_line.c\
-		$(GNL_DIR)get_next_line_utils.c
+		$(GNL_DIR)get_next_line_utils.c \
+		$(GNL_DIR)get_next_line_utils2.c
 
 SRCS = $(addprefix ./srcs/,\
 		cub3D.c\
@@ -61,7 +62,10 @@ SRCS = $(addprefix ./srcs/,\
 		render/get_texture.c)
 
 OBJS = $(SRCS:.c=.o)
+D_FILES = $(SRCS:.c=.d)
 GNL_OBJS = $(GNL:.c=.o)
+D_FILES_GNL = $(GNL:.c=.d)
+
 
 all: $(NAME)
 
@@ -70,7 +74,8 @@ debug: all
 
 $(NAME): ${OBJS} ${GNL_OBJS} | tools
 		cp $(MLX) libmlx.dylib
-		${CC} ${FLAGS} -o ${NAME} ${OBJS} ${GNL_OBJS} ${LIBS} ${{MLX}
+		${CC} ${FLAGS} -o ${NAME} ${OBJS} ${GNL_OBJS} ${LIBS} ${MLX}
+include $(wildcard $(D_FILES))
 
 .c.o:
 	${CC} ${FLAGS} -c $< -o $@
@@ -80,7 +85,7 @@ tools:
 	make -C $(MLX_DIR)
 
 clean:
-	rm -f ${OBJS} ${GNL_OBJS}
+	rm -f ${OBJS} ${GNL_OBJS} ${D_FILES} ${D_FILES_GNL}
 	rm -f Cub3D.bmp
 	rm -f libmlx.dylib
 	make -C $(LIBFT_DIR) clean

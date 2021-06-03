@@ -6,11 +6,11 @@
 /*   By: jtambra <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 22:02:54 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/07 22:06:05 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 21:04:16 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/cub3D.h"
+#include "cub3D.h"
 
 void	get_north(t_config *config)
 {

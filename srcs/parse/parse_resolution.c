@@ -6,11 +6,11 @@
 /*   By: jtambra <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 19:56:21 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/07 23:38:59 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 21:03:03 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/cub3D.h"
+#include "cub3D.h"
 
 void	ft_parse_resolution(char *line, t_parse *parse, int counter)
 {

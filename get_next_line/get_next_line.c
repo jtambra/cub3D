@@ -6,7 +6,7 @@
 /*   By: jtambra <talya_1998@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/07 21:41:55 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/07 00:03:20 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/23 18:38:37 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,6 @@ int	get_next_line(int fd, char **line)
 	char		buf[BUFFER_SIZE + 1];
 	static char	*remainder;
 	char		*ptr_n;
-	char		*box;
 
 	ptr_n = NULL;
 	*line = ft_calloc(1, sizeof(1));
@@ -92,11 +91,10 @@ int	get_next_line(int fd, char **line)
 		ptr_n = (ft_strchr(buf, '\n'));
 		if (ptr_n && ((ft_n_exist(&ptr_n, &remainder)) == -1))
 			return (-1);
-		box = *line;
-		*line = ft_strjoin(*line, buf);
-		free(box);
+		ft_add_buf_to_line(line, buf);
 		if (!(*line))
 			return (-1);
+		count = read(fd, buf, BUFFER_SIZE);
 	}
 	return (ft_check(remainder, count));
 }

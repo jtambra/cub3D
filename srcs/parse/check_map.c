@@ -6,11 +6,11 @@
 /*   By: jtambra <jtambra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 20:09:49 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 19:41:35 by jtambra          ###   ########.fr       */
+/*   Updated: 2021/05/10 21:02:21 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/cub3D.h"
+#include "cub3D.h"
 
 static int	ft_is_map(char *line)
 {

@@ -1,28 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   malloc_sprites.c                                   :+:      :+:    :+:   */
+/*   get_next_line_utils2.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jtambra <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/07 21:26:52 by jtambra           #+#    #+#             */
-/*   Updated: 2021/05/10 21:03:54 by jtambra          ###   ########.fr       */
+/*   Created: 2021/05/23 18:23:13 by jtambra           #+#    #+#             */
+/*   Updated: 2021/05/23 18:35:56 by jtambra          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3D.h"
+#include "get_next_line.h"
 
-t_position	*malloc_sp(t_config *config, int *order, double *dist, int amount)
+void	ft_add_buf_to_line(char **line, char *buf)
 {
-	t_position	*sprites;
+	char *box;
 
-	sprites = (t_position *)malloc(sizeof(t_position) * amount);
-	if (!sprites)
-	{
-		free(order);
-		free(dist);
-		ft_free_all(NULL, &config->parse);
-		ft_exit_cub("Error\nMemory is not allocated for tmp to sort sprites");
-	}
-	return (sprites);
+	box = *line;
+	*line = ft_strjoin(*line, buf);
+	free(box);
 }
