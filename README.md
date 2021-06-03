@@ -1,5 +1,5 @@
 # cub3D
-<h2>My first RayCaster with miniLibX</h2><br>
+<h3>My first RayCaster with miniLibX</h3><br>
 
 <strong>Run the following commands:</strong>
 <p>$ make<br>
